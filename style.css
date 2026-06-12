@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+   
+}
+
+/* Header */
+header {
+    background: #222;
+    color: goldenrod;
+    padding: 15px 0;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: goldenrod;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 100vh;
+    background: url(../images/background.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-left: 68%;
+}
+
+.hero::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: palevioletred;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: goldenrod;
+    transform: scale(1.05);
+}
+
+/* About Section */
+
+#about {
+    padding: 60px 10%;
+    background: plum;
+}
+
+#about > h2{
+    text-align: center;
+    padding-left: 45%;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.about-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-image > img {
+    width: 500px;
+    height: 580px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-text{
+    flex: 1;
+    color: rgb(95, 93, 93);
+    min-width: 300px;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Skills section */
+
+#skills {
+    padding: 60px 10%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px;
+}
+
+.skill-card {
+    background: palevioletred;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    background: goldenrod;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.skill-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    font-family: cursive;
+}
+
+/* Projects section */
+
+#projects {
+    padding: 50px 20px;
+    text-align: center;
+    background: wheat;
+}
+
+#projects h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    background: purple;
+    color: aliceblue;
+    transform: translateY(-8px);
+}
+
+.project-card > img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card > h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: fantasy;
+}
+
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: lavender;
+    color: blueviolet;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.project-card .btn:hover {
+    background: wheat;
+    color: black;
+    cursor: pointer;
+}
+
+/* Contact Section */
+
+form {
+    padding: 50px 20px;
+    background: cornsilk;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact > h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: palevioletred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: goldenrod;
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    margin-top: 30px;
+}
